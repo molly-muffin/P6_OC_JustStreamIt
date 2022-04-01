@@ -1,82 +1,54 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="utf-8" />
-        <link rel="stylesheet" href="style.css" />
-        <title>JustStreamIt</title>
-    </head>
 
-    <body>
-        <header class="header">
-            <img class="center" src="logo.png">
-            <button class="header_button"><span>Acceuil</span></button>
-            <button class="header_button"><span>Catégories</span></button>
-        </header>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <title>JustStreamIt</title>
+    <link rel="icon" type="image/x-icon" href="img/logo.png">
+</head>
 
-            <div class="center" id="block_of_best_movie">
-                <section id="best_movie">
-                <h2>Meilleur Film</h2>
-                    <p id="best_movie_image"></p>
-                    <p id="best_movie_infos"></p>
-                </section>  
-                <button class="button button_infos_film"><span>Infos</span></button>
-            </div>
+<body>
+    <header class="header">
+        <img class="center" src="img/logo.png">
+        <h1 class="center" class="header__title">Quel film on regarde ce soir ?</h1>
+        <button class="header_button"><span><a href="#bloc_page">Acceuil</a></span></button>
+        <button class="header_button"><span><a href="#categories">Catégories</a></span></button>
+    </header>
 
-            <h1>Meilleurs Films</h1>
-            <div id="caroussel_BM" class="caroussel">
-                <button class="button left"><span>⇦</span></button>
-                    <div id="gallery_BM">
-                        <ul class="images_BM"></ul>
-                    </div>
-                <button class="button right"><span>⇨</span></button>
-            </div>
+    <div id="bloc_page">
+        <div class="center" id="block_of_best_movie">
+            <section id="best_movie">
+            <h2>Meilleur Film</h2>
+                <p id="best_movie_image"></p>
+                <p id="best_movie_infos"></p>
+            </section>  
+            <button class="button_infos_movie"><span>Infos</span></button>
+        </div>
 
-            <h1>Films d'actions</h1>
-            <div id="caroussel_A" class="caroussel">
-                <button class="button left"><span>⇦</span></button>
-                    <div id="gallery_A">
-                        <ul class="images_A"></ul>
-                    </div>
-                <button class="button right"><span>⇨</span></button>
-            </div>
+        <h2 class="center">Meilleurs Films</h2>
+        <div class="parent parent_top"></div>
+        <h2 id="categories" class="center">Catégorie film d'action</h2>
+        <div class="parent parent_action"></div>
+        <h2 class="center">Catégorie film comique</h2>
+        <div class="parent parent_comedy"></div>
+        <h2 class="center">Catégorie film pour enfant</h2>
+        <div class="parent parent_family"></div>
+        <h2 class="center">Catégorie film d'horreur</h2>
+        <div class="parent parent_horror"></div>
 
-            <h1>Films comique</h1>
-            <div id="caroussel_C" class="caroussel">
-                <button class="button left"><span>⇦</span></button>
-                    <div id="gallery_C">
-                        <ul class="images_C"></ul>
-                    </div>
-                <button class="button right"><span>⇨</span></button>
+        <div id="myMovie" class="movie">
+            <div class="movie_info">
+                <span class="close">&times;</span>
+                <div class="movie_img"></div>
+                <h2 class="center"> Informations</h2>
+                <ul class="movie_infos"></ul>
             </div>
-            
-            <h1>Films pour enfant</h1>
-            <div id="caroussel_BB" class="caroussel">
-                <button class="button left"><span>⇦</span></button>
-                    <div id="gallery_BB">
-                        <ul class="images_BB"></ul>
-                    </div>
-                <button class="button right"><span>⇨</span></button>
-            </div>
+        </div>
+    </div>
 
-            <h1>Films d'horreur</h1>
-            <div id="caroussel_H" class="caroussel">
-                <button class="button left"><span>⇦</span></button>
-                    <div id="gallery_H">
-                        <ul class="images_H"></ul>
-                    </div>
-                <button class="button right"><span>⇨</span></button>
-            </div>
-        
-            <div id="myFilm" class="film">
-                <div class="film_info">
-                    <span class="close">&times;</span>
-                    <div class="film_img"></div>
-                    <h1 class="center"> Informations</h1>
-                    <ul class="film_infos"></ul>
-                </div>
-            </div>
+<script src="scripts.js"></script>  
 
-    <script src="scripts.js"></script>  
-    </body>
+</body>
     
 </html>
